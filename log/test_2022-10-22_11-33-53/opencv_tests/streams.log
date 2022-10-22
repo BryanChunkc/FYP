@@ -1,0 +1,12 @@
+[0.205s] Invoking command in '/home/john/Documents/swarm_ws/src/opencv_tests': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/john/Documents/swarm_ws/build/opencv_tests/pytest.xml --junit-prefix=opencv_tests -o cache_dir=/home/john/Documents/swarm_ws/build/opencv_tests/.pytest_cache PYTHONPATH=/home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[0.460s] [1m============================= test session starts ==============================[0m
+[0.460s] platform linux -- Python 3.6.9, pytest-3.3.2, py-1.5.2, pluggy-0.6.0
+[0.461s] rootdir: /home/john/Documents/swarm_ws/src/opencv_tests, inifile:
+[0.461s] plugins: cov-2.5.1, colcon-core-0.10.0
+[0.463s] [1m
+[0.463s] collecting 0 items                                                             [0m[1m
+[0.463s] collected 0 items                                                              [0m
+[0.463s] 
+[0.463s]  generated xml file: /home/john/Documents/swarm_ws/build/opencv_tests/pytest.xml 
+[0.463s] [33m[1m========================= no tests ran in 0.00 seconds =========================[0m
+[0.488s] Invoked command in '/home/john/Documents/swarm_ws/src/opencv_tests' returned '5': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/john/Documents/swarm_ws/build/opencv_tests/pytest.xml --junit-prefix=opencv_tests -o cache_dir=/home/john/Documents/swarm_ws/build/opencv_tests/.pytest_cache PYTHONPATH=/home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

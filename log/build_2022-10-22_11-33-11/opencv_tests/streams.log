@@ -1,0 +1,42 @@
+[0.515s] Invoking command in '/home/john/Documents/swarm_ws/build/opencv_tests': PYTHONPATH=/home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/john/Documents/swarm_ws/install/opencv_tests --uninstall --editable --build-directory /home/john/Documents/swarm_ws/build/opencv_tests/build
+[0.720s] running develop
+[0.823s] Removing /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv-tests.egg-link (link to .)
+[0.845s] Invoked command in '/home/john/Documents/swarm_ws/build/opencv_tests' returned '0': PYTHONPATH=/home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /home/john/Documents/swarm_ws/install/opencv_tests --uninstall --editable --build-directory /home/john/Documents/swarm_ws/build/opencv_tests/build
+[0.848s] Invoking command in '/home/john/Documents/swarm_ws/src/opencv_tests': PYTHONPATH=/home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/opencv_tests build --build-base /home/john/Documents/swarm_ws/build/opencv_tests/build install --prefix /home/john/Documents/swarm_ws/install/opencv_tests --record /home/john/Documents/swarm_ws/build/opencv_tests/install.log --single-version-externally-managed
+[1.035s] running egg_info
+[1.036s] writing ../../build/opencv_tests/opencv_tests.egg-info/PKG-INFO
+[1.036s] writing dependency_links to ../../build/opencv_tests/opencv_tests.egg-info/dependency_links.txt
+[1.036s] writing entry points to ../../build/opencv_tests/opencv_tests.egg-info/entry_points.txt
+[1.037s] writing requirements to ../../build/opencv_tests/opencv_tests.egg-info/requires.txt
+[1.037s] writing top-level names to ../../build/opencv_tests/opencv_tests.egg-info/top_level.txt
+[1.065s] reading manifest file '../../build/opencv_tests/opencv_tests.egg-info/SOURCES.txt'
+[1.066s] writing manifest file '../../build/opencv_tests/opencv_tests.egg-info/SOURCES.txt'
+[1.066s] running build
+[1.066s] running build_py
+[1.066s] creating /home/john/Documents/swarm_ws/build/opencv_tests/build
+[1.066s] creating /home/john/Documents/swarm_ws/build/opencv_tests/build/lib
+[1.067s] creating /home/john/Documents/swarm_ws/build/opencv_tests/build/lib/opencv_tests
+[1.067s] copying opencv_tests/source.py -> /home/john/Documents/swarm_ws/build/opencv_tests/build/lib/opencv_tests
+[1.067s] copying opencv_tests/broadcast.py -> /home/john/Documents/swarm_ws/build/opencv_tests/build/lib/opencv_tests
+[1.067s] copying opencv_tests/__init__.py -> /home/john/Documents/swarm_ws/build/opencv_tests/build/lib/opencv_tests
+[1.067s] copying opencv_tests/rosfacedetect.py -> /home/john/Documents/swarm_ws/build/opencv_tests/build/lib/opencv_tests
+[1.067s] running install
+[1.067s] running install_lib
+[1.068s] creating /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv_tests
+[1.068s] copying /home/john/Documents/swarm_ws/build/opencv_tests/build/lib/opencv_tests/source.py -> /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv_tests
+[1.068s] copying /home/john/Documents/swarm_ws/build/opencv_tests/build/lib/opencv_tests/broadcast.py -> /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv_tests
+[1.068s] copying /home/john/Documents/swarm_ws/build/opencv_tests/build/lib/opencv_tests/__init__.py -> /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv_tests
+[1.068s] copying /home/john/Documents/swarm_ws/build/opencv_tests/build/lib/opencv_tests/rosfacedetect.py -> /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv_tests
+[1.068s] byte-compiling /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv_tests/source.py to source.cpython-36.pyc
+[1.069s] byte-compiling /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv_tests/broadcast.py to broadcast.cpython-36.pyc
+[1.069s] byte-compiling /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv_tests/__init__.py to __init__.cpython-36.pyc
+[1.069s] byte-compiling /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv_tests/rosfacedetect.py to rosfacedetect.cpython-36.pyc
+[1.070s] running install_data
+[1.070s] running install_egg_info
+[1.072s] Copying ../../build/opencv_tests/opencv_tests.egg-info to /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv_tests-3.4.0-py3.6.egg-info
+[1.073s] running install_scripts
+[1.088s] Installing broadcast script to /home/john/Documents/swarm_ws/install/opencv_tests/lib/opencv_tests
+[1.088s] Installing rosfacedetect script to /home/john/Documents/swarm_ws/install/opencv_tests/lib/opencv_tests
+[1.089s] Installing source script to /home/john/Documents/swarm_ws/install/opencv_tests/lib/opencv_tests
+[1.089s] writing list of installed files to '/home/john/Documents/swarm_ws/build/opencv_tests/install.log'
+[1.109s] Invoked command in '/home/john/Documents/swarm_ws/src/opencv_tests' returned '0': PYTHONPATH=/home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/opencv_tests build --build-base /home/john/Documents/swarm_ws/build/opencv_tests/build install --prefix /home/john/Documents/swarm_ws/install/opencv_tests --record /home/john/Documents/swarm_ws/build/opencv_tests/install.log --single-version-externally-managed

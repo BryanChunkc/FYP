@@ -1,0 +1,29 @@
+[0.460s] Invoking command in '/home/john/Documents/swarm_ws/build/opencv_tests': PYTHONPATH=/home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages: /usr/bin/python3 setup.py develop --prefix /home/john/Documents/swarm_ws/install/opencv_tests --editable --build-directory /home/john/Documents/swarm_ws/build/opencv_tests/build --no-deps install_data --install-dir /home/john/Documents/swarm_ws/install/opencv_tests
+[0.639s] running develop
+[0.695s] running egg_info
+[0.695s] creating opencv_tests.egg-info
+[0.695s] writing opencv_tests.egg-info/PKG-INFO
+[0.695s] writing dependency_links to opencv_tests.egg-info/dependency_links.txt
+[0.695s] writing entry points to opencv_tests.egg-info/entry_points.txt
+[0.695s] writing requirements to opencv_tests.egg-info/requires.txt
+[0.695s] writing top-level names to opencv_tests.egg-info/top_level.txt
+[0.696s] writing manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[0.721s] reading manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[0.721s] writing manifest file 'opencv_tests.egg-info/SOURCES.txt'
+[0.722s] running build_ext
+[0.723s] Creating /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/site.py
+[0.724s] Creating /home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages/opencv-tests.egg-link (link to .)
+[0.724s] Installing broadcast script to /home/john/Documents/swarm_ws/install/opencv_tests/lib/opencv_tests
+[0.724s] Installing rosfacedetect script to /home/john/Documents/swarm_ws/install/opencv_tests/lib/opencv_tests
+[0.725s] Installing source script to /home/john/Documents/swarm_ws/install/opencv_tests/lib/opencv_tests
+[0.725s] 
+[0.725s] Installed /home/john/Documents/swarm_ws/build/opencv_tests
+[0.725s] running install_data
+[0.725s] creating /home/john/Documents/swarm_ws/install/opencv_tests/share
+[0.725s] creating /home/john/Documents/swarm_ws/install/opencv_tests/share/ament_index
+[0.725s] creating /home/john/Documents/swarm_ws/install/opencv_tests/share/ament_index/resource_index
+[0.725s] creating /home/john/Documents/swarm_ws/install/opencv_tests/share/ament_index/resource_index/packages
+[0.725s] copying resource/opencv_tests -> /home/john/Documents/swarm_ws/install/opencv_tests/share/ament_index/resource_index/packages
+[0.725s] creating /home/john/Documents/swarm_ws/install/opencv_tests/share/opencv_tests
+[0.725s] copying package.xml -> /home/john/Documents/swarm_ws/install/opencv_tests/share/opencv_tests
+[0.751s] Invoked command in '/home/john/Documents/swarm_ws/build/opencv_tests' returned '0': PYTHONPATH=/home/john/Documents/swarm_ws/install/opencv_tests/lib/python3.6/site-packages: /usr/bin/python3 setup.py develop --prefix /home/john/Documents/swarm_ws/install/opencv_tests --editable --build-directory /home/john/Documents/swarm_ws/build/opencv_tests/build --no-deps install_data --install-dir /home/john/Documents/swarm_ws/install/opencv_tests

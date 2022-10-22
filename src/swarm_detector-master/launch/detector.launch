@@ -1,0 +1,76 @@
+<launch>
+  <arg name="device" default="0"/>
+  <arg name="manager" default="detection_manager" />
+  <arg name="show" default="false" />
+  <arg name="image_topic" default="/pg_$(arg device)/image_raw" />
+  <arg name="cam_file" default="$(find swarm_detector)/config/ptgrey_17591762_camera_calib.yaml" />
+  <arg name="cam_file_down" default="$(find swarm_detector)/config/ptgrey_17591762_camera_calib.yaml" />
+  <arg name="output" default="screen" />
+  <arg name="pub_image" default="false" />
+  <arg name="drone_id" default="1" />
+  <arg name="detect_duration" default="1.0" />
+  <arg name="extrinsic_path" default="/home/dji/SwarmConfig/fisheye_ptgrey_n3/fisheye_cuda.yaml" />
+  <arg name="swarm_fused" default="/swarm_drones/swarm_drone_fused"/>
+  <arg name="width" default="400" />
+  <arg name="enable_rear" default="false" />
+  <arg name="pub_track_result" default="false" />
+  <arg name="debug_save_tracked_raw" default="false" />
+  <arg name="down_as_main" default="false" />
+  <arg name="debug_only_front" default="false" />
+  <arg name="external_nodelet" default="false" />
+  <arg name="pub_anonymous" default="true" />
+  <arg name="drone_pose_network_model" default="/root/swarm_ws/src/swarm_detector/config/drone_pose_v1.2_128x128_rtx3080_fp32.trt" />
+
+  <node pkg="nodelet" type="nodelet" name="$(arg manager)" args="manager --no-bond" output="$(arg output)" unless="$(arg external_nodelet)" />
+
+ <node pkg="nodelet" type="nodelet" name="SwarmDetector" args="load swarm_detector_pkg/SwarmDetector /$(arg manager) --no-bond" output="$(arg output)">
+    <remap from="~image_raw" to="$(arg image_topic)"/>
+    <remap from="~image_front" to="/flattener/fuck"/>
+    <remap from="~odometry" to="/vins_estimator/imu_propagate"/>
+    <remap from="~imu" to="/dji_sdk_1/dji_sdk/imu"/>
+    <remap from="~vins_flattened" to="/vins_estimator/flattened_raw"/>
+    <remap from="~swarm_fused" to="$(arg swarm_fused)" />
+
+    <param name="pub_anonymous" type="bool" value="$(arg pub_anonymous)" />
+    <param name="cam_file" type="string" value="$(arg cam_file)" />
+    <param name="cam_file_down" type="string" value="$(arg cam_file_down)" />
+    <!-- <param name="weights" type="string" value="$(find swarm_detector)/config/drone_yolov3-tiny.weights" />
+    <param name="darknet_cfg" type="string" value="$(find swarm_detector)/config/drone_yolov3-tiny.cfg" />     -->
+    <param name="weights" type="string" value="$(find swarm_detector)/config/yolov4-tiny-drone.weights" />
+    <param name="darknet_cfg" type="string" value="$(find swarm_detector)/config/yolov4-tiny-drone.cfg" />
+    <param name="show" type="bool" value="$(arg show)" />
+    <param name="pub_image" type="bool" value="$(arg pub_image)" />
+    <param name="enable_rear" type="bool" value="$(arg enable_rear)" />
+    <param name="down_as_main" type="bool" value="$(arg down_as_main)" />
+    <param name="drone_id" type="int" value="$(arg drone_id)" />
+    <param name="extrinsic_path" type="string" value="$(arg extrinsic_path)" />
+    <param name="detect_duration" type="double" value="$(arg detect_duration)" />
+    <param name="width" type="int" value="$(arg width)" />
+    <param name="debug_save_tracked_raw" type="bool" value="$(arg debug_save_tracked_raw)" />
+    <param name="pub_track_result" type="bool" value="$(arg pub_track_result)" />
+    <param name="drone_pose_network_model" type="string" value="$(arg drone_pose_network_model)" />
+    <param name="debug_only_front" type="bool" value="$(arg debug_only_front)" />
+    <rosparam>
+      thres: 0.5
+      overlap_thres: 0.1
+      fov: 235
+      show_width: 1080
+      p_track: 0.999
+      min_p: 0.1
+      drone_scale: 0.48
+      acpt_overlap_thres: 5
+      use_tensorrt: true
+      tensorrt_fp16: true
+      enable_tracker: true
+      enable_triangulation: false
+      enable_up_cam: true
+      enable_down_cam: true
+      triangulation_thres: 0.2
+      gamma: 0.6
+
+      drone_pose_width: 128
+      drone_pose_height: 128
+      drone_pose_zoom: 4
+    </rosparam>
+  </node>
+</launch>

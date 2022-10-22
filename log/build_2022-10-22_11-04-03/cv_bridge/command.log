@@ -1,0 +1,2 @@
+Invoking command in '/home/john/Documents/swarm_ws/build/cv_bridge': /usr/bin/cmake /home/john/Documents/swarm_ws/src/cv_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/cv_bridge
+Invoked command in '/home/john/Documents/swarm_ws/build/cv_bridge' returned '1': /usr/bin/cmake /home/john/Documents/swarm_ws/src/cv_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/cv_bridge

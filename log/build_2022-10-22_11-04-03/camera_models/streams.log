@@ -1,0 +1,54 @@
+[0.044s] Invoking command in '/home/john/Documents/swarm_ws/build/camera_models': /usr/bin/cmake /home/john/Documents/swarm_ws/src/camera_models -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/camera_models
+[0.301s] -- The C compiler identification is GNU 7.5.0
+[0.389s] -- The CXX compiler identification is GNU 7.5.0
+[0.394s] -- Check for working C compiler: /usr/bin/cc
+[0.495s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.496s] -- Detecting C compiler ABI info
+[0.581s] -- Detecting C compiler ABI info - done
+[0.591s] -- Detecting C compile features
+[0.867s] -- Detecting C compile features - done
+[0.871s] -- Check for working CXX compiler: /usr/bin/c++
+[0.959s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.961s] -- Detecting CXX compiler ABI info
+[1.056s] -- Detecting CXX compiler ABI info - done
+[1.065s] -- Detecting CXX compile features
+[1.499s] -- Detecting CXX compile features - done
+[1.500s] -- Using CATKIN_DEVEL_PREFIX: /home/john/Documents/swarm_ws/build/camera_models/devel
+[1.501s] -- Using CMAKE_PREFIX_PATH: /opt/ros/melodic
+[1.501s] -- This workspace overlays: /opt/ros/melodic
+[1.503s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.519s] -- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") 
+[1.520s] -- Using PYTHON_EXECUTABLE: /usr/bin/python2
+[1.520s] -- Using Debian Python package layout
+[1.520s] -- Using empy: /usr/bin/empy
+[1.727s] -- Using CATKIN_ENABLE_TESTING: ON
+[1.727s] -- Call enable_testing()
+[1.730s] -- Using CATKIN_TEST_RESULTS_DIR: /home/john/Documents/swarm_ws/build/camera_models/test_results
+[1.757s] -- Found gtest sources under '/usr/src/googletest': gtests will be built
+[1.757s] -- Found gmock sources under '/usr/src/googletest': gmock will be built
+[1.772s] -- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") 
+[1.773s] -- Looking for pthread.h
+[1.858s] -- Looking for pthread.h - found
+[1.859s] -- Looking for pthread_create
+[1.946s] -- Looking for pthread_create - not found
+[1.946s] -- Looking for pthread_create in pthreads
+[2.007s] -- Looking for pthread_create in pthreads - not found
+[2.008s] -- Looking for pthread_create in pthread
+[2.097s] -- Looking for pthread_create in pthread - found
+[2.099s] -- Found Threads: TRUE  
+[2.105s] -- Using Python nosetests: /usr/bin/nosetests-2.7
+[2.159s] -- catkin 0.7.29
+[2.159s] -- BUILD_SHARED_LIBS is on
+[2.434s] -- Boost version: 1.65.1
+[2.434s] -- Found the following Boost libraries:
+[2.434s] --   filesystem
+[2.434s] --   program_options
+[2.434s] --   system
+[2.442s] -- Found OpenCV: /usr/local (found suitable version "3.4.0", minimum required is "3") 
+[2.448s] -- Found required Ceres dependency: Eigen version 3.3.4 in /usr/lib/cmake/eigen3
+[2.451s] -- Found required Ceres dependency: glog
+[2.454s] -- Found required Ceres dependency: gflags
+[2.455s] -- Found Ceres version: 2.1.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SchurSpecializations, Multithreading]
+[2.628s] -- Configuring done
+[2.663s] -- Generating done
+[2.669s] -- Build files have been written to: /home/john/Documents/swarm_ws/build/camera_models

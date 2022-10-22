@@ -1,0 +1,442 @@
+[0.000000] (-) TimerEvent: {}
+[0.000174] (bspline) JobQueued: {'identifier': 'bspline', 'dependencies': OrderedDict()}
+[0.000230] (camera_models) JobQueued: {'identifier': 'camera_models', 'dependencies': OrderedDict()}
+[0.000406] (cv_bridge) JobQueued: {'identifier': 'cv_bridge', 'dependencies': OrderedDict()}
+[0.000440] (image_geometry) JobQueued: {'identifier': 'image_geometry', 'dependencies': OrderedDict()}
+[0.000464] (swarmtal_msgs) JobQueued: {'identifier': 'swarmtal_msgs', 'dependencies': OrderedDict()}
+[0.000487] (vins) JobQueued: {'identifier': 'vins', 'dependencies': OrderedDict()}
+[0.000509] (opencv_tests) JobQueued: {'identifier': 'opencv_tests', 'dependencies': OrderedDict([('cv_bridge', '/home/john/Documents/swarm_ws/install/cv_bridge')])}
+[0.000532] (swarm_msgs) JobQueued: {'identifier': 'swarm_msgs', 'dependencies': OrderedDict([('swarmtal_msgs', '/home/john/Documents/swarm_ws/install/swarmtal_msgs')])}
+[0.000554] (swarmcomm_msgs) JobQueued: {'identifier': 'swarmcomm_msgs', 'dependencies': OrderedDict([('swarmtal_msgs', '/home/john/Documents/swarm_ws/install/swarmtal_msgs')])}
+[0.000588] (vision_opencv) JobQueued: {'identifier': 'vision_opencv', 'dependencies': OrderedDict([('cv_bridge', '/home/john/Documents/swarm_ws/install/cv_bridge'), ('image_geometry', '/home/john/Documents/swarm_ws/install/image_geometry')])}
+[0.000622] (inf_uwb_ros) JobQueued: {'identifier': 'inf_uwb_ros', 'dependencies': OrderedDict([('bspline', '/home/john/Documents/swarm_ws/install/bspline'), ('swarmtal_msgs', '/home/john/Documents/swarm_ws/install/swarmtal_msgs'), ('swarm_msgs', '/home/john/Documents/swarm_ws/install/swarm_msgs'), ('swarmcomm_msgs', '/home/john/Documents/swarm_ws/install/swarmcomm_msgs')])}
+[0.000657] (localization_proxy) JobQueued: {'identifier': 'localization_proxy', 'dependencies': OrderedDict([('swarmtal_msgs', '/home/john/Documents/swarm_ws/install/swarmtal_msgs'), ('swarm_msgs', '/home/john/Documents/swarm_ws/install/swarm_msgs'), ('swarmcomm_msgs', '/home/john/Documents/swarm_ws/install/swarmcomm_msgs')])}
+[0.000688] (swarm_localization) JobQueued: {'identifier': 'swarm_localization', 'dependencies': OrderedDict([('camera_models', '/home/john/Documents/swarm_ws/install/camera_models'), ('swarmtal_msgs', '/home/john/Documents/swarm_ws/install/swarmtal_msgs'), ('swarm_msgs', '/home/john/Documents/swarm_ws/install/swarm_msgs')])}
+[0.000746] (swarm_loop) JobQueued: {'identifier': 'swarm_loop', 'dependencies': OrderedDict([('camera_models', '/home/john/Documents/swarm_ws/install/camera_models'), ('cv_bridge', '/home/john/Documents/swarm_ws/install/cv_bridge'), ('swarmtal_msgs', '/home/john/Documents/swarm_ws/install/swarmtal_msgs'), ('vins', '/home/john/Documents/swarm_ws/install/vins'), ('swarm_msgs', '/home/john/Documents/swarm_ws/install/swarm_msgs')])}
+[0.000783] (swarm_detector) JobQueued: {'identifier': 'swarm_detector', 'dependencies': OrderedDict([('camera_models', '/home/john/Documents/swarm_ws/install/camera_models'), ('cv_bridge', '/home/john/Documents/swarm_ws/install/cv_bridge'), ('swarmtal_msgs', '/home/john/Documents/swarm_ws/install/swarmtal_msgs'), ('vins', '/home/john/Documents/swarm_ws/install/vins'), ('swarm_msgs', '/home/john/Documents/swarm_ws/install/swarm_msgs'), ('swarm_loop', '/home/john/Documents/swarm_ws/install/swarm_loop')])}
+[0.000810] (swarmtal_msgs) JobStarted: {'identifier': 'swarmtal_msgs'}
+[0.010594] (cv_bridge) JobStarted: {'identifier': 'cv_bridge'}
+[0.016285] (camera_models) JobStarted: {'identifier': 'camera_models'}
+[0.023587] (vins) JobStarted: {'identifier': 'vins'}
+[0.027721] (bspline) JobStarted: {'identifier': 'bspline'}
+[0.034887] (image_geometry) JobStarted: {'identifier': 'image_geometry'}
+[0.042790] (swarmtal_msgs) JobProgress: {'identifier': 'swarmtal_msgs', 'progress': 'cmake'}
+[0.043178] (swarmtal_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/john/Documents/swarm_ws/src/swarmtal_msgs', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/swarmtal_msgs'], 'cwd': '/home/john/Documents/swarm_ws/build/swarmtal_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'john'), ('LANGUAGE', 'en_HK:en'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1687'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_PACKAGE_PATH', '/opt/ros/melodic/share'), ('LD_LIBRARY_PATH', '/opt/ros/melodic/lib'), ('ROS_ETC_DIR', '/opt/ros/melodic/etc/ros'), ('SHLVL', '1'), ('OLDPWD', '/home/john/Documents'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/john'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2846'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'melodic'), ('LOGNAME', 'john'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '1'), ('PKG_CONFIG_PATH', '/opt/ros/melodic/lib/pkgconfig'), ('USERNAME', 'john'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/john-ThinkPad-X1-Carbon-6th:@/tmp/.ICE-unix/1592,unix/john-ThinkPad-X1-Carbon-6th:/tmp/.ICE-unix/1592'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_HK.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('ROS_ROOT', '/opt/ros/melodic/share/ros'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('TERMINATOR_UUID', 'urn:uuid:5a4dea6d-061d-4917-923d-89cab00198cd'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/john/Documents/swarm_ws/build/swarmtal_msgs'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/opt/ros/melodic/lib/python2.7/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/melodic')]), 'shell': False}
+[0.050663] (cv_bridge) JobProgress: {'identifier': 'cv_bridge', 'progress': 'cmake'}
+[0.051444] (cv_bridge) Command: {'cmd': ['/usr/bin/cmake', '/home/john/Documents/swarm_ws/src/cv_bridge', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/cv_bridge'], 'cwd': '/home/john/Documents/swarm_ws/build/cv_bridge', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'john'), ('LANGUAGE', 'en_HK:en'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1687'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_PACKAGE_PATH', '/opt/ros/melodic/share'), ('LD_LIBRARY_PATH', '/opt/ros/melodic/lib'), ('ROS_ETC_DIR', '/opt/ros/melodic/etc/ros'), ('SHLVL', '1'), ('OLDPWD', '/home/john/Documents'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/john'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2846'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'melodic'), ('LOGNAME', 'john'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '1'), ('PKG_CONFIG_PATH', '/opt/ros/melodic/lib/pkgconfig'), ('USERNAME', 'john'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/john-ThinkPad-X1-Carbon-6th:@/tmp/.ICE-unix/1592,unix/john-ThinkPad-X1-Carbon-6th:/tmp/.ICE-unix/1592'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_HK.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('ROS_ROOT', '/opt/ros/melodic/share/ros'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('TERMINATOR_UUID', 'urn:uuid:5a4dea6d-061d-4917-923d-89cab00198cd'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/john/Documents/swarm_ws/build/cv_bridge'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/opt/ros/melodic/lib/python2.7/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/melodic')]), 'shell': False}
+[0.057385] (camera_models) JobProgress: {'identifier': 'camera_models', 'progress': 'cmake'}
+[0.057549] (camera_models) Command: {'cmd': ['/usr/bin/cmake', '/home/john/Documents/swarm_ws/src/camera_models', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/camera_models'], 'cwd': '/home/john/Documents/swarm_ws/build/camera_models', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'john'), ('LANGUAGE', 'en_HK:en'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1687'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_PACKAGE_PATH', '/opt/ros/melodic/share'), ('LD_LIBRARY_PATH', '/opt/ros/melodic/lib'), ('ROS_ETC_DIR', '/opt/ros/melodic/etc/ros'), ('SHLVL', '1'), ('OLDPWD', '/home/john/Documents'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/john'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2846'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'melodic'), ('LOGNAME', 'john'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '1'), ('PKG_CONFIG_PATH', '/opt/ros/melodic/lib/pkgconfig'), ('USERNAME', 'john'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/john-ThinkPad-X1-Carbon-6th:@/tmp/.ICE-unix/1592,unix/john-ThinkPad-X1-Carbon-6th:/tmp/.ICE-unix/1592'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_HK.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('ROS_ROOT', '/opt/ros/melodic/share/ros'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('TERMINATOR_UUID', 'urn:uuid:5a4dea6d-061d-4917-923d-89cab00198cd'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/john/Documents/swarm_ws/build/camera_models'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/opt/ros/melodic/lib/python2.7/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/melodic')]), 'shell': False}
+[0.063081] (vins) JobProgress: {'identifier': 'vins', 'progress': 'cmake'}
+[0.063425] (vins) Command: {'cmd': ['/usr/bin/cmake', '/home/john/Documents/swarm_ws/src/vins_estimator', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/vins'], 'cwd': '/home/john/Documents/swarm_ws/build/vins', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'john'), ('LANGUAGE', 'en_HK:en'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1687'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_PACKAGE_PATH', '/opt/ros/melodic/share'), ('LD_LIBRARY_PATH', '/opt/ros/melodic/lib'), ('ROS_ETC_DIR', '/opt/ros/melodic/etc/ros'), ('SHLVL', '1'), ('OLDPWD', '/home/john/Documents'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/john'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2846'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'melodic'), ('LOGNAME', 'john'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '1'), ('PKG_CONFIG_PATH', '/opt/ros/melodic/lib/pkgconfig'), ('USERNAME', 'john'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/john-ThinkPad-X1-Carbon-6th:@/tmp/.ICE-unix/1592,unix/john-ThinkPad-X1-Carbon-6th:/tmp/.ICE-unix/1592'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_HK.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('ROS_ROOT', '/opt/ros/melodic/share/ros'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('TERMINATOR_UUID', 'urn:uuid:5a4dea6d-061d-4917-923d-89cab00198cd'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/john/Documents/swarm_ws/build/vins'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/opt/ros/melodic/lib/python2.7/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/melodic')]), 'shell': False}
+[0.066190] (bspline) JobProgress: {'identifier': 'bspline', 'progress': 'cmake'}
+[0.066562] (bspline) Command: {'cmd': ['/usr/bin/cmake', '/home/john/Documents/swarm_ws/src/bspline-main', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/bspline'], 'cwd': '/home/john/Documents/swarm_ws/build/bspline', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'john'), ('LANGUAGE', 'en_HK:en'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1687'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_PACKAGE_PATH', '/opt/ros/melodic/share'), ('LD_LIBRARY_PATH', '/opt/ros/melodic/lib'), ('ROS_ETC_DIR', '/opt/ros/melodic/etc/ros'), ('SHLVL', '1'), ('OLDPWD', '/home/john/Documents'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/john'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2846'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'melodic'), ('LOGNAME', 'john'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '1'), ('PKG_CONFIG_PATH', '/opt/ros/melodic/lib/pkgconfig'), ('USERNAME', 'john'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/john-ThinkPad-X1-Carbon-6th:@/tmp/.ICE-unix/1592,unix/john-ThinkPad-X1-Carbon-6th:/tmp/.ICE-unix/1592'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_HK.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('ROS_ROOT', '/opt/ros/melodic/share/ros'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('TERMINATOR_UUID', 'urn:uuid:5a4dea6d-061d-4917-923d-89cab00198cd'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/john/Documents/swarm_ws/build/bspline'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/opt/ros/melodic/lib/python2.7/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/melodic')]), 'shell': False}
+[0.072373] (image_geometry) JobProgress: {'identifier': 'image_geometry', 'progress': 'cmake'}
+[0.073127] (image_geometry) Command: {'cmd': ['/usr/bin/cmake', '/home/john/Documents/swarm_ws/src/image_geometry', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/image_geometry'], 'cwd': '/home/john/Documents/swarm_ws/build/image_geometry', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'john'), ('LANGUAGE', 'en_HK:en'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1687'), ('XDG_SESSION_TYPE', 'x11'), ('ROS_PACKAGE_PATH', '/opt/ros/melodic/share'), ('LD_LIBRARY_PATH', '/opt/ros/melodic/lib'), ('ROS_ETC_DIR', '/opt/ros/melodic/etc/ros'), ('SHLVL', '1'), ('OLDPWD', '/home/john/Documents'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/john'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '2'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2846'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator20x1a6021154d881c'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'melodic'), ('LOGNAME', 'john'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '1'), ('PKG_CONFIG_PATH', '/opt/ros/melodic/lib/pkgconfig'), ('USERNAME', 'john'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/melodic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/john-ThinkPad-X1-Carbon-6th:@/tmp/.ICE-unix/1592,unix/john-ThinkPad-X1-Carbon-6th:/tmp/.ICE-unix/1592'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_HK.UTF-8'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('ROS_ROOT', '/opt/ros/melodic/share/ros'), ('XMODIFIERS', '@im=ibus'), ('ROSLISP_PACKAGE_DIRECTORIES', ''), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('TERMINATOR_UUID', 'urn:uuid:5a4dea6d-061d-4917-923d-89cab00198cd'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://localhost:11311'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/john/Documents/swarm_ws/build/image_geometry'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('PYTHONPATH', '/opt/ros/melodic/lib/python2.7/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/melodic')]), 'shell': False}
+[0.079472] (cv_bridge) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.080886] (cv_bridge) StderrLine: {'line': b'CMake Error at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.081354] (cv_bridge) StderrLine: {'line': b'  CMake 3.14 or higher is required.  You are running version 3.10.2\n'}
+[0.081520] (cv_bridge) StderrLine: {'line': b'\n'}
+[0.081616] (cv_bridge) StderrLine: {'line': b'\n'}
+[0.085484] (cv_bridge) CommandEnded: {'returncode': 1}
+[0.098336] (-) TimerEvent: {}
+[0.121603] (cv_bridge) JobEnded: {'identifier': 'cv_bridge', 'rc': 1}
+[0.198521] (-) TimerEvent: {}
+[0.299281] (-) TimerEvent: {}
+[0.310157] (image_geometry) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[0.311309] (bspline) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[0.313699] (swarmtal_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[0.314097] (vins) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[0.317250] (camera_models) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[0.380352] (image_geometry) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[0.386162] (image_geometry) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.387341] (swarmtal_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[0.390472] (vins) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[0.393714] (swarmtal_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.396090] (vins) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.397408] (bspline) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[0.399390] (-) TimerEvent: {}
+[0.402859] (bspline) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.405144] (camera_models) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[0.410151] (camera_models) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.475433] (image_geometry) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.476689] (image_geometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.484788] (vins) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.485493] (vins) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.486896] (swarmtal_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.487850] (swarmtal_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.490107] (bspline) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.490751] (bspline) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.499513] (-) TimerEvent: {}
+[0.510933] (camera_models) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.511898] (camera_models) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.566186] (image_geometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.573714] (vins) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.573959] (bspline) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.574956] (image_geometry) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.585906] (swarmtal_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.591275] (vins) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.591583] (bspline) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.595898] (swarmtal_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.596671] (camera_models) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.599597] (-) TimerEvent: {}
+[0.607169] (camera_models) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.699717] (-) TimerEvent: {}
+[0.800084] (-) TimerEvent: {}
+[0.838630] (image_geometry) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.841159] (image_geometry) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.856722] (swarmtal_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.860459] (swarmtal_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.870880] (vins) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.873740] (bspline) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.874585] (vins) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.877400] (bspline) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.883310] (camera_models) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.886710] (camera_models) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.900230] (-) TimerEvent: {}
+[0.944500] (image_geometry) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.945459] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.967148] (swarmtal_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.968264] (swarmtal_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.975484] (camera_models) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.976556] (vins) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.976826] (camera_models) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.977448] (vins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.986310] (bspline) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.987436] (bspline) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.000369] (-) TimerEvent: {}
+[1.057999] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.066206] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.071812] (camera_models) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.079890] (swarmtal_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.081429] (camera_models) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.085539] (vins) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.094472] (bspline) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.094745] (swarmtal_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.095395] (vins) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.100483] (-) TimerEvent: {}
+[1.104703] (bspline) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.200634] (-) TimerEvent: {}
+[1.300991] (-) TimerEvent: {}
+[1.401416] (-) TimerEvent: {}
+[1.501783] (-) TimerEvent: {}
+[1.514709] (camera_models) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.516549] (camera_models) StdoutLine: {'line': b'-- Using CATKIN_DEVEL_PREFIX: /home/john/Documents/swarm_ws/build/camera_models/devel\n'}
+[1.516850] (camera_models) StdoutLine: {'line': b'-- Using CMAKE_PREFIX_PATH: /opt/ros/melodic\n'}
+[1.516986] (camera_models) StdoutLine: {'line': b'-- This workspace overlays: /opt/ros/melodic\n'}
+[1.519164] (camera_models) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.534167] (image_geometry) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.535505] (camera_models) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") \n'}
+[1.535833] (camera_models) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python2\n'}
+[1.535986] (camera_models) StdoutLine: {'line': b'-- Using Debian Python package layout\n'}
+[1.536163] (camera_models) StdoutLine: {'line': b'-- Using empy: /usr/bin/empy\n'}
+[1.541889] (image_geometry) StderrLine: {'line': b'CMake Error at CMakeLists.txt:4 (find_package):\n'}
+[1.542196] (image_geometry) StderrLine: {'line': b'  By not providing "Findament_cmake_python.cmake" in CMAKE_MODULE_PATH this\n'}
+[1.542406] (image_geometry) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[1.542553] (image_geometry) StderrLine: {'line': b'  "ament_cmake_python", but CMake did not find one.\n'}
+[1.542688] (image_geometry) StderrLine: {'line': b'\n'}
+[1.542817] (image_geometry) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[1.542937] (image_geometry) StderrLine: {'line': b'  "ament_cmake_python" with any of the following names:\n'}
+[1.543052] (image_geometry) StderrLine: {'line': b'\n'}
+[1.543165] (image_geometry) StderrLine: {'line': b'    ament_cmake_pythonConfig.cmake\n'}
+[1.543285] (image_geometry) StderrLine: {'line': b'    ament_cmake_python-config.cmake\n'}
+[1.543393] (image_geometry) StderrLine: {'line': b'\n'}
+[1.543515] (image_geometry) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake_python" to CMAKE_PREFIX_PATH or\n'}
+[1.543636] (image_geometry) StderrLine: {'line': b'  set "ament_cmake_python_DIR" to a directory containing one of the above\n'}
+[1.543755] (image_geometry) StderrLine: {'line': b'  files.  If "ament_cmake_python" provides a separate development package or\n'}
+[1.543872] (image_geometry) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[1.543985] (image_geometry) StderrLine: {'line': b'\n'}
+[1.544085] (image_geometry) StderrLine: {'line': b'\n'}
+[1.544189] (image_geometry) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.544305] (image_geometry) StdoutLine: {'line': b'See also "/home/john/Documents/swarm_ws/build/image_geometry/CMakeFiles/CMakeOutput.log".\n'}
+[1.545399] (image_geometry) JobEnded: {'identifier': 'image_geometry', 'rc': 'SIGINT'}
+[1.558938] (bspline) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.574151] (bspline) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.587169] (swarmtal_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.589234] (swarmtal_msgs) StdoutLine: {'line': b'-- Using CATKIN_DEVEL_PREFIX: /home/john/Documents/swarm_ws/build/swarmtal_msgs/devel\n'}
+[1.589544] (swarmtal_msgs) StdoutLine: {'line': b'-- Using CMAKE_PREFIX_PATH: /opt/ros/melodic\n'}
+[1.589747] (swarmtal_msgs) StdoutLine: {'line': b'-- This workspace overlays: /opt/ros/melodic\n'}
+[1.592184] (swarmtal_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.593953] (bspline) StdoutLine: {'line': b'--   Found eigen3, version 3.3.4\n'}
+[1.599821] (vins) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.601866] (-) TimerEvent: {}
+[1.609106] (swarmtal_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") \n'}
+[1.609370] (swarmtal_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python2\n'}
+[1.609466] (swarmtal_msgs) StdoutLine: {'line': b'-- Using Debian Python package layout\n'}
+[1.609641] (swarmtal_msgs) StdoutLine: {'line': b'-- Using empy: /usr/bin/empy\n'}
+[1.645781] (bspline) StdoutLine: {'line': b'-- Found eigen: /usr/include/eigen3  \n'}
+[1.684073] (bspline) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.702007] (-) TimerEvent: {}
+[1.743218] (camera_models) StdoutLine: {'line': b'-- Using CATKIN_ENABLE_TESTING: ON\n'}
+[1.743545] (camera_models) StdoutLine: {'line': b'-- Call enable_testing()\n'}
+[1.746447] (camera_models) StdoutLine: {'line': b'-- Using CATKIN_TEST_RESULTS_DIR: /home/john/Documents/swarm_ws/build/camera_models/test_results\n'}
+[1.772804] (camera_models) StdoutLine: {'line': b"-- Found gtest sources under '/usr/src/googletest': gtests will be built\n"}
+[1.773165] (camera_models) StdoutLine: {'line': b"-- Found gmock sources under '/usr/src/googletest': gmock will be built\n"}
+[1.779663] (bspline) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.780525] (bspline) StdoutLine: {'line': b'-- Looking for pthread_create\n'}
+[1.787831] (camera_models) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") \n'}
+[1.788982] (camera_models) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.794130] (swarmtal_msgs) StdoutLine: {'line': b'-- Using CATKIN_ENABLE_TESTING: ON\n'}
+[1.794418] (swarmtal_msgs) StdoutLine: {'line': b'-- Call enable_testing()\n'}
+[1.796058] (swarmtal_msgs) StdoutLine: {'line': b'-- Using CATKIN_TEST_RESULTS_DIR: /home/john/Documents/swarm_ws/build/swarmtal_msgs/test_results\n'}
+[1.802132] (-) TimerEvent: {}
+[1.825734] (swarmtal_msgs) StdoutLine: {'line': b"-- Found gtest sources under '/usr/src/googletest': gtests will be built\n"}
+[1.825938] (swarmtal_msgs) StdoutLine: {'line': b"-- Found gmock sources under '/usr/src/googletest': gmock will be built\n"}
+[1.843949] (swarmtal_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") \n'}
+[1.845036] (swarmtal_msgs) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.867451] (bspline) StdoutLine: {'line': b'-- Looking for pthread_create - not found\n'}
+[1.867820] (bspline) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.874156] (camera_models) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.874699] (camera_models) StdoutLine: {'line': b'-- Looking for pthread_create\n'}
+[1.902245] (-) TimerEvent: {}
+[1.924308] (swarmtal_msgs) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.924934] (swarmtal_msgs) StdoutLine: {'line': b'-- Looking for pthread_create\n'}
+[1.938141] (bspline) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.938453] (bspline) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.944278] (vins) StdoutLine: {'line': b'-- Found OpenMP_C: -fopenmp (found version "4.5") \n'}
+[1.962295] (camera_models) StdoutLine: {'line': b'-- Looking for pthread_create - not found\n'}
+[1.962557] (camera_models) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.002365] (-) TimerEvent: {}
+[2.011946] (bspline) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.013309] (bspline) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.023563] (camera_models) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.023940] (camera_models) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.024132] (swarmtal_msgs) StdoutLine: {'line': b'-- Looking for pthread_create - not found\n'}
+[2.024336] (swarmtal_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.057142] (vins) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[2.058481] (vins) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5")  \n'}
+[2.060537] (vins) StdoutLine: {'line': b'-- Using CATKIN_DEVEL_PREFIX: /home/john/Documents/swarm_ws/build/vins/devel\n'}
+[2.060810] (vins) StdoutLine: {'line': b'-- Using CMAKE_PREFIX_PATH: /opt/ros/melodic\n'}
+[2.061001] (vins) StdoutLine: {'line': b'-- This workspace overlays: /opt/ros/melodic\n'}
+[2.063762] (vins) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.069659] (bspline) StdoutLine: {'line': b'-- Boost version: 1.65.1\n'}
+[2.069946] (bspline) StdoutLine: {'line': b'-- Found the following Boost libraries:\n'}
+[2.070036] (bspline) StdoutLine: {'line': b'--   system\n'}
+[2.070113] (bspline) StdoutLine: {'line': b'--   filesystem\n'}
+[2.070186] (bspline) StdoutLine: {'line': b'--   thread\n'}
+[2.070259] (bspline) StdoutLine: {'line': b'--   date_time\n'}
+[2.070331] (bspline) StdoutLine: {'line': b'--   iostreams\n'}
+[2.070402] (bspline) StdoutLine: {'line': b'--   serialization\n'}
+[2.070472] (bspline) StdoutLine: {'line': b'--   chrono\n'}
+[2.070590] (bspline) StdoutLine: {'line': b'--   atomic\n'}
+[2.070663] (bspline) StdoutLine: {'line': b'--   regex\n'}
+[2.072264] (bspline) StdoutLine: {'line': b"-- Checking for module 'libopenni'\n"}
+[2.082834] (vins) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") \n'}
+[2.083176] (vins) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python2\n'}
+[2.083275] (vins) StdoutLine: {'line': b'-- Using Debian Python package layout\n'}
+[2.083471] (vins) StdoutLine: {'line': b'-- Using empy: /usr/bin/empy\n'}
+[2.087628] (bspline) StdoutLine: {'line': b'--   Found libopenni, version 1.5.4.0\n'}
+[2.088805] (swarmtal_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.089071] (swarmtal_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.102480] (-) TimerEvent: {}
+[2.113005] (camera_models) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.114840] (camera_models) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.121251] (camera_models) StdoutLine: {'line': b'-- Using Python nosetests: /usr/bin/nosetests-2.7\n'}
+[2.139413] (bspline) StdoutLine: {'line': b'-- Found openni: /usr/lib/libOpenNI.so  \n'}
+[2.140858] (bspline) StdoutLine: {'line': b"-- Checking for module 'libopenni2'\n"}
+[2.158813] (bspline) StdoutLine: {'line': b'--   Found libopenni2, version 2.2.0.3\n'}
+[2.174870] (camera_models) StdoutLine: {'line': b'-- catkin 0.7.29\n'}
+[2.175146] (camera_models) StdoutLine: {'line': b'-- BUILD_SHARED_LIBS is on\n'}
+[2.178927] (swarmtal_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.180256] (swarmtal_msgs) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.185088] (swarmtal_msgs) StdoutLine: {'line': b'-- Using Python nosetests: /usr/bin/nosetests-2.7\n'}
+[2.202569] (-) TimerEvent: {}
+[2.208706] (bspline) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/libOpenNI2.so  \n'}
+[2.216745] (bspline) StdoutLine: {'line': b'-- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) \n'}
+[2.217033] (bspline) StderrLine: {'line': b'** WARNING ** io features related to ensenso will be disabled\n'}
+[2.221353] (bspline) StdoutLine: {'line': b'-- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) \n'}
+[2.221642] (bspline) StderrLine: {'line': b'** WARNING ** io features related to davidSDK will be disabled\n'}
+[2.222934] (bspline) StdoutLine: {'line': b'-- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) \n'}
+[2.223192] (bspline) StderrLine: {'line': b'** WARNING ** io features related to dssdk will be disabled\n'}
+[2.223413] (bspline) StderrLine: {'line': b'** WARNING ** io features related to pcap will be disabled\n'}
+[2.223651] (bspline) StderrLine: {'line': b'** WARNING ** io features related to png will be disabled\n'}
+[2.229699] (swarmtal_msgs) StdoutLine: {'line': b'-- catkin 0.7.29\n'}
+[2.229945] (swarmtal_msgs) StdoutLine: {'line': b'-- BUILD_SHARED_LIBS is on\n'}
+[2.278327] (vins) StdoutLine: {'line': b'-- Using CATKIN_ENABLE_TESTING: ON\n'}
+[2.278543] (vins) StdoutLine: {'line': b'-- Call enable_testing()\n'}
+[2.280835] (vins) StdoutLine: {'line': b'-- Using CATKIN_TEST_RESULTS_DIR: /home/john/Documents/swarm_ws/build/vins/test_results\n'}
+[2.302669] (-) TimerEvent: {}
+[2.304144] (vins) StdoutLine: {'line': b"-- Found gtest sources under '/usr/src/googletest': gtests will be built\n"}
+[2.304331] (vins) StdoutLine: {'line': b"-- Found gmock sources under '/usr/src/googletest': gmock will be built\n"}
+[2.313942] (bspline) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[2.314200] (bspline) StdoutLine: {'line': b'   "/usr/lib/x86_64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[2.314349] (bspline) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[2.314473] (bspline) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[2.314717] (bspline) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[2.314852] (bspline) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[2.314985] (bspline) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"\n'}
+[2.315116] (bspline) StdoutLine: {'line': b'but not all the files it references.\n'}
+[2.315252] (bspline) StdoutLine: {'line': b'\n'}
+[2.315387] (bspline) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[2.315525] (bspline) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[2.315657] (bspline) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[2.315783] (bspline) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[2.315912] (bspline) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[2.316044] (bspline) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[2.316171] (bspline) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-6.3/VTKTargets.cmake"\n'}
+[2.316306] (bspline) StdoutLine: {'line': b'but not all the files it references.\n'}
+[2.316432] (bspline) StdoutLine: {'line': b'\n'}
+[2.319922] (vins) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") \n'}
+[2.321482] (vins) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.378309] (swarmtal_msgs) StdoutLine: {'line': b'-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy\n'}
+[2.397862] (bspline) StdoutLine: {'line': b'-- Found libusb-1.0: /usr/include  \n'}
+[2.398169] (bspline) StderrLine: {'line': b'** WARNING ** io features related to libusb-1.0 will be disabled\n'}
+[2.398760] (bspline) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[2.402774] (-) TimerEvent: {}
+[2.410121] (vins) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.410552] (vins) StdoutLine: {'line': b'-- Looking for pthread_create\n'}
+[2.415702] (bspline) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[2.449723] (camera_models) StdoutLine: {'line': b'-- Boost version: 1.65.1\n'}
+[2.450050] (camera_models) StdoutLine: {'line': b'-- Found the following Boost libraries:\n'}
+[2.450209] (camera_models) StdoutLine: {'line': b'--   filesystem\n'}
+[2.450355] (camera_models) StdoutLine: {'line': b'--   program_options\n'}
+[2.450497] (camera_models) StdoutLine: {'line': b'--   system\n'}
+[2.458496] (camera_models) StdoutLine: {'line': b'-- Found OpenCV: /usr/local (found suitable version "3.4.0", minimum required is "3") \n'}
+[2.464098] (camera_models) StdoutLine: {'line': b'-- Found required Ceres dependency: Eigen version 3.3.4 in /usr/lib/cmake/eigen3\n'}
+[2.466824] (camera_models) StdoutLine: {'line': b'-- Found required Ceres dependency: glog\n'}
+[2.469314] (bspline) StdoutLine: {'line': b'-- Found Flann: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a  \n'}
+[2.470504] (camera_models) StdoutLine: {'line': b'-- Found required Ceres dependency: gflags\n'}
+[2.471344] (camera_models) StdoutLine: {'line': b'-- Found Ceres version: 2.1.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SchurSpecializations, Multithreading]\n'}
+[2.491096] (vins) StdoutLine: {'line': b'-- Looking for pthread_create - not found\n'}
+[2.491497] (vins) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.502881] (-) TimerEvent: {}
+[2.524172] (bspline) StdoutLine: {'line': b'-- Could NOT find ensenso (missing: ENSENSO_LIBRARY ENSENSO_INCLUDE_DIR) \n'}
+[2.524407] (bspline) StderrLine: {'line': b'** WARNING ** visualization features related to ensenso will be disabled\n'}
+[2.527251] (bspline) StdoutLine: {'line': b'-- Could NOT find DAVIDSDK (missing: DAVIDSDK_LIBRARY DAVIDSDK_INCLUDE_DIR) \n'}
+[2.527544] (bspline) StderrLine: {'line': b'** WARNING ** visualization features related to davidSDK will be disabled\n'}
+[2.528265] (bspline) StdoutLine: {'line': b'-- Could NOT find DSSDK (missing: _DSSDK_LIBRARIES) \n'}
+[2.528516] (bspline) StderrLine: {'line': b'** WARNING ** visualization features related to dssdk will be disabled\n'}
+[2.529265] (bspline) StdoutLine: {'line': b'-- Could NOT find RSSDK (missing: _RSSDK_LIBRARIES) \n'}
+[2.529553] (bspline) StderrLine: {'line': b'** WARNING ** visualization features related to rssdk will be disabled\n'}
+[2.553073] (vins) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.553302] (vins) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.568916] (bspline) StdoutLine: {'line': b'-- Found qhull: /usr/lib/x86_64-linux-gnu/libqhull.so  \n'}
+[2.603013] (-) TimerEvent: {}
+[2.608929] (bspline) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[2.610351] (bspline) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.610572] (bspline) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[2.612073] (bspline) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.612368] (bspline) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[2.613948] (bspline) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.614340] (bspline) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[2.615858] (bspline) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.616169] (bspline) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[2.617637] (bspline) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.618041] (bspline) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[2.619636] (bspline) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.619935] (bspline) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[2.620844] (vins) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.621416] (bspline) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.621935] (bspline) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[2.622122] (vins) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.622584] (bspline) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.8  \n'}
+[2.622956] (bspline) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[2.623599] (bspline) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.8  \n'}
+[2.623829] (bspline) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[2.625266] (bspline) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.625862] (bspline) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[2.626522] (vins) StdoutLine: {'line': b'-- Using Python nosetests: /usr/bin/nosetests-2.7\n'}
+[2.627248] (bspline) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.627544] (bspline) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[2.629140] (bspline) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.630115] (bspline) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[2.631782] (bspline) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[2.632428] (bspline) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[2.636189] (bspline) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[2.636631] (bspline) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[2.638986] (bspline) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[2.640128] (bspline) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[2.642688] (bspline) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[2.643674] (bspline) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[2.644518] (camera_models) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.646284] (bspline) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[2.647099] (bspline) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[2.649637] (bspline) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[2.651462] (bspline) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[2.653910] (bspline) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[2.654294] (bspline) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[2.656051] (bspline) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[2.659255] (bspline) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[2.660246] (bspline) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.8  \n'}
+[2.660447] (bspline) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[2.661641] (bspline) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.8  \n'}
+[2.661910] (bspline) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[2.668937] (vins) StdoutLine: {'line': b'-- catkin 0.7.29\n'}
+[2.669118] (vins) StdoutLine: {'line': b'-- BUILD_SHARED_LIBS is on\n'}
+[2.669863] (bspline) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.8  \n'}
+[2.670134] (bspline) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[2.672798] (bspline) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[2.673668] (bspline) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[2.676107] (bspline) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.679496] (camera_models) StdoutLine: {'line': b'-- Generating done\n'}
+[2.685574] (camera_models) StdoutLine: {'line': b'-- Build files have been written to: /home/john/Documents/swarm_ws/build/camera_models\n'}
+[2.691433] (camera_models) JobEnded: {'identifier': 'camera_models', 'rc': 'SIGINT'}
+[2.703156] (-) TimerEvent: {}
+[2.707899] (swarmtal_msgs) StdoutLine: {'line': b'-- swarmtal_msgs: 4 messages, 0 services\n'}
+[2.710578] (bspline) StdoutLine: {'line': b'-- Found PCL: /usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_common.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_common.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_octree.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;vtkChartsCore;vtkCommonColor;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkInfovisCore;vtkFiltersExtraction;vtkCommonExecutionModel;vtkFiltersCore;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkftgl;vtkDICOMParser;vtkDomainsChemistry;vtkIOXML;vtkIOGeometry;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkFiltersAMR;vtkParallelCore;vtkIOLegacy;vtkFiltersFlowPaths;vtkFiltersGeneric;vtkFiltersHybrid;vtkImagingSources;vtkFiltersHyperTree;vtkFiltersImaging;vtkImagingGeneral;vtkFiltersModeling;vtkFiltersParallel;vtkFiltersParallelFlowPaths;vtkParallelMPI;vtkFiltersParallelGeometry;vtkFiltersParallelImaging;vtkFiltersParallelMPI;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersPython;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkWrappingPythonCore;vtkWrappingTools;vtkFiltersReebGraph;vtkFiltersSMP;vtkFiltersSelection;vtkFiltersTexture;vtkFiltersVerdict;verdict;vtkGUISupportQt;vtkInteractionStyle;vtkRenderingOpenGL;vtkImagingHybrid;vtkIOImage;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkGUISupportQtOpenGL;vtkGUISupportQtSQL;vtkIOSQL;sqlite3;vtkGUISupportQtWebkit;vtkViewsQt;vtkViewsInfovis;vtkInfovisLayout;vtkInfovisBoostGraphAlgorithms;vtkRenderingLabel;vtkViewsCore;vtkInteractionWidgets;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingVolume;vtkGeovisCore;/usr/lib/x86_64-linux-gnu/libproj.so;vtkIOAMR;/usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so;vtkIOEnSight;vtkIOExodus;vtkexoIIc;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;vtkIOExport;vtkRenderingGL2PS;vtkRenderingContextOpenGL;/usr/lib/x86_64-linux-gnu/libgl2ps.so;vtkIOFFMPEG;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkIOGDAL;vtkIOGeoJSON;vtkIOImport;vtkIOInfovis;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkIOLSDyna;vtkIOMINC;vtkIOMPIImage;vtkIOMPIParallel;vtkIOParallel;vtkIONetCDF;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOMySQL;vtkIOODBC;vtkIOPLY;vtkIOParallelExodus;vtkIOParallelLSDyna;vtkIOParallelNetCDF;vtkIOParallelXML;vtkIOPostgreSQL;vtkIOVPIC;VPIC;vtkIOVideo;vtkIOXdmf2;vtkxdmf2;vtkImagingMath;vtkImagingMorphological;vtkImagingStatistics;vtkImagingStencil;vtkInteractionImage;vtkLocalExample;vtkParallelMPI4Py;vtkPythonInterpreter;vtkRenderingExternal;vtkRenderingFreeTypeFontConfig;vtkRenderingImage;vtkRenderingLIC;vtkRenderingLOD;vtkRenderingMatplotlib;vtkRenderingParallel;vtkRenderingParallelLIC;vtkRenderingQt;vtkRenderingVolumeAMR;vtkRenderingVolumeOpenGL;vtkTestingGenericBridge;vtkTestingIOSQL;vtkTestingRendering;vtkViewsContext2D;vtkViewsGeovis;vtkWrappingJava;optimized;/usr/lib/x86_64-linux-gnu/libpcl_io.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_io.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;optimized;/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_kdtree.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_search.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_search.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_filters.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_filters.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_features.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_features.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_ml.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_ml.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_segmentation.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_visualization.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_visualization.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_surface.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_surface.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_registration.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_registration.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_keypoints.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_keypoints.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_tracking.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_tracking.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_recognition.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_recognition.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_stereo.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_stereo.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_apps.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_apps.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_outofcore.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_outofcore.so;optimized;/usr/lib/x86_64-linux-gnu/libpcl_people.so;debug;/usr/lib/x86_64-linux-gnu/libpcl_people.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;/usr/lib/x86_64-linux-gnu/libboost_regex.so;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/x86_64-linux-gnu/libqhull.so;debug;/usr/lib/x86_64-linux-gnu/libqhull.so;/usr/lib/libOpenNI.so;/usr/lib/libOpenNI2.so;optimized;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;debug;/usr/lib/x86_64-linux-gnu/libflann_cpp_s.a;vtkChartsCore;vtkCommonColor;vtkCommonDataModel;vtkCommonMath;vtkCommonCore;vtksys;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkInfovisCore;vtkFiltersExtraction;vtkCommonExecutionModel;vtkFiltersCore;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkalglib;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libz.so;vtkftgl;vtkDICOMParser;vtkDomainsChemistry;vtkIOXML;vtkIOGeometry;vtkIOCore;vtkIOXMLParser;/usr/lib/x86_64-linux-gnu/libexpat.so;vtkFiltersAMR;vtkParallelCore;vtkIOLegacy;vtkFiltersFlowPaths;vtkFiltersGeneric;vtkFiltersHybrid;vtkImagingSources;vtkFiltersHyperTree;vtkFiltersImaging;vtkImagingGeneral;vtkFiltersModeling;vtkFiltersParallel;vtkFiltersParallelFlowPaths;vtkParallelMPI;vtkFiltersParallelGeometry;vtkFiltersParallelImaging;vtkFiltersParallelMPI;vtkFiltersParallelStatistics;vtkFiltersProgrammable;vtkFiltersPython;/usr/lib/x86_64-linux-gnu/libpython2.7.so;vtkWrappingPythonCore;vtkWrappingTools;vtkFiltersReebGraph;vtkFiltersSMP;vtkFiltersSelection;vtkFiltersTexture;vtkFiltersVerdict;verdict;vtkGUISupportQt;vtkInteractionStyle;vtkRenderingOpenGL;vtkImagingHybrid;vtkIOImage;vtkmetaio;/usr/lib/x86_64-linux-gnu/libjpeg.so;/usr/lib/x86_64-linux-gnu/libpng.so;/usr/lib/x86_64-linux-gnu/libtiff.so;vtkGUISupportQtOpenGL;vtkGUISupportQtSQL;vtkIOSQL;sqlite3;vtkGUISupportQtWebkit;vtkViewsQt;vtkViewsInfovis;vtkInfovisLayout;vtkInfovisBoostGraphAlgorithms;vtkRenderingLabel;vtkViewsCore;vtkInteractionWidgets;vtkRenderingAnnotation;vtkImagingColor;vtkRenderingVolume;vtkGeovisCore;/usr/lib/x86_64-linux-gnu/libproj.so;vtkIOAMR;/usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so;/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so;vtkIOEnSight;vtkIOExodus;vtkexoIIc;/usr/lib/x86_64-linux-gnu/libnetcdf_c++.so;/usr/lib/x86_64-linux-gnu/libnetcdf.so;vtkIOExport;vtkRenderingGL2PS;vtkRenderingContextOpenGL;/usr/lib/x86_64-linux-gnu/libgl2ps.so;vtkIOFFMPEG;vtkIOMovie;/usr/lib/x86_64-linux-gnu/libtheoraenc.so;/usr/lib/x86_64-linux-gnu/libtheoradec.so;/usr/lib/x86_64-linux-gnu/libogg.so;vtkIOGDAL;vtkIOGeoJSON;vtkIOImport;vtkIOInfovis;/usr/lib/x86_64-linux-gnu/libxml2.so;vtkIOLSDyna;vtkIOMINC;vtkIOMPIImage;vtkIOMPIParallel;vtkIOParallel;vtkIONetCDF;/usr/lib/x86_64-linux-gnu/libjsoncpp.so;vtkIOMySQL;vtkIOODBC;vtkIOPLY;vtkIOParallelExodus;vtkIOParallelLSDyna;vtkIOParallelNetCDF;vtkIOParallelXML;vtkIOPostgreSQL;vtkIOVPIC;VPIC;vtkIOVideo;vtkIOXdmf2;vtkxdmf2;vtkImagingMath;vtkImagingMorphological;vtkImagingStatistics;vtkImagingStencil;vtkInteractionImage;vtkLocalExample;vtkParallelMPI4Py;vtkPythonInterpreter;vtkRenderingExternal;vtkRenderingFreeTypeFontConfig;vtkRenderingImage;vtkRenderingLIC;vtkRenderingLOD;vtkRenderingMatplotlib;vtkRenderingParallel;vtkRenderingParallelLIC;vtkRenderingQt;vtkRenderingVolumeAMR;vtkRenderingVolumeOpenGL;vtkTestingGenericBridge;vtkTestingIOSQL;vtkTestingRendering;vtkViewsContext2D;vtkViewsGeovis;vtkWrappingJava (Required is at least version "1.7") \n'}
+[2.711887] (bspline) StdoutLine: {'line': b'-- Using CATKIN_DEVEL_PREFIX: /home/john/Documents/swarm_ws/build/bspline/devel\n'}
+[2.712109] (bspline) StdoutLine: {'line': b'-- Using CMAKE_PREFIX_PATH: /opt/ros/melodic\n'}
+[2.712300] (bspline) StdoutLine: {'line': b'-- This workspace overlays: /opt/ros/melodic\n'}
+[2.714244] (bspline) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.731217] (bspline) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2") \n'}
+[2.731512] (bspline) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python2\n'}
+[2.731607] (bspline) StdoutLine: {'line': b'-- Using Debian Python package layout\n'}
+[2.731795] (bspline) StdoutLine: {'line': b'-- Using empy: /usr/bin/empy\n'}
+[2.767941] (vins) StdoutLine: {'line': b'-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy\n'}
+[2.803285] (-) TimerEvent: {}
+[2.856206] (swarmtal_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.882578] (swarmtal_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.889258] (swarmtal_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/john/Documents/swarm_ws/build/swarmtal_msgs\n'}
+[2.893470] (swarmtal_msgs) JobEnded: {'identifier': 'swarmtal_msgs', 'rc': 'SIGINT'}
+[2.898691] (bspline) StdoutLine: {'line': b'-- Using CATKIN_ENABLE_TESTING: ON\n'}
+[2.898951] (bspline) StdoutLine: {'line': b'-- Call enable_testing()\n'}
+[2.900909] (bspline) StdoutLine: {'line': b'-- Using CATKIN_TEST_RESULTS_DIR: /home/john/Documents/swarm_ws/build/bspline/test_results\n'}
+[2.903359] (-) TimerEvent: {}
+[2.914681] (bspline) StdoutLine: {'line': b"-- Found gtest sources under '/usr/src/googletest': gtests will be built\n"}
+[2.914956] (bspline) StdoutLine: {'line': b"-- Found gmock sources under '/usr/src/googletest': gmock will be built\n"}
+[2.932749] (bspline) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python2 (found version "2.7.17") \n'}
+[2.938482] (vins) StdoutLine: {'line': b'-- Could NOT find cv_bridge (missing: cv_bridge_DIR)\n'}
+[2.938922] (vins) StdoutLine: {'line': b"-- Could not find the required component 'cv_bridge'. The following CMake error indicates that you either need to install the package with the same name or change your environment so that it can be found.\n"}
+[2.939102] (vins) StderrLine: {'line': b'CMake Error at /opt/ros/melodic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):\n'}
+[2.939255] (vins) StderrLine: {'line': b'  Could not find a package configuration file provided by "cv_bridge" with\n'}
+[2.939386] (vins) StderrLine: {'line': b'  any of the following names:\n'}
+[2.939517] (vins) StderrLine: {'line': b'\n'}
+[2.939649] (vins) StderrLine: {'line': b'    cv_bridgeConfig.cmake\n'}
+[2.939779] (vins) StderrLine: {'line': b'    cv_bridge-config.cmake\n'}
+[2.940014] (vins) StderrLine: {'line': b'\n'}
+[2.940151] (vins) StderrLine: {'line': b'  Add the installation prefix of "cv_bridge" to CMAKE_PREFIX_PATH or set\n'}
+[2.940284] (vins) StderrLine: {'line': b'  "cv_bridge_DIR" to a directory containing one of the above files.  If\n'}
+[2.940417] (vins) StderrLine: {'line': b'  "cv_bridge" provides a separate development package or SDK, be sure it has\n'}
+[2.940621] (vins) StderrLine: {'line': b'  been installed.\n'}
+[2.940768] (vins) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.940873] (vins) StderrLine: {'line': b'  CMakeLists.txt:16 (find_package)\n'}
+[2.940976] (vins) StderrLine: {'line': b'\n'}
+[2.941082] (vins) StderrLine: {'line': b'\n'}
+[2.941182] (bspline) StdoutLine: {'line': b'-- Using Python nosetests: /usr/bin/nosetests-2.7\n'}
+[2.941294] (vins) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.941396] (vins) StdoutLine: {'line': b'See also "/home/john/Documents/swarm_ws/build/vins/CMakeFiles/CMakeOutput.log".\n'}
+[2.941498] (vins) StdoutLine: {'line': b'See also "/home/john/Documents/swarm_ws/build/vins/CMakeFiles/CMakeError.log".\n'}
+[2.944837] (vins) JobEnded: {'identifier': 'vins', 'rc': 'SIGINT'}
+[2.983794] (bspline) StdoutLine: {'line': b'-- catkin 0.7.29\n'}
+[2.984043] (bspline) StdoutLine: {'line': b'-- BUILD_SHARED_LIBS is on\n'}
+[3.003518] (-) TimerEvent: {}
+[3.103802] (-) TimerEvent: {}
+[3.142696] (bspline) StdoutLine: {'line': b'-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy\n'}
+[3.203944] (-) TimerEvent: {}
+[3.304272] (-) TimerEvent: {}
+[3.320382] (bspline) StdoutLine: {'line': b'-- bspline: 1 messages, 0 services\n'}
+[3.404416] (-) TimerEvent: {}
+[3.451640] (bspline) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.487368] (bspline) StdoutLine: {'line': b'-- Generating done\n'}
+[3.492847] (bspline) StdoutLine: {'line': b'-- Build files have been written to: /home/john/Documents/swarm_ws/build/bspline\n'}
+[3.501050] (bspline) JobEnded: {'identifier': 'bspline', 'rc': 'SIGINT'}
+[3.504705] (-) TimerEvent: {}
+[3.512390] (opencv_tests) JobSkipped: {'identifier': 'opencv_tests'}
+[3.512470] (swarm_msgs) JobSkipped: {'identifier': 'swarm_msgs'}
+[3.512503] (swarmcomm_msgs) JobSkipped: {'identifier': 'swarmcomm_msgs'}
+[3.512643] (vision_opencv) JobSkipped: {'identifier': 'vision_opencv'}
+[3.512669] (inf_uwb_ros) JobSkipped: {'identifier': 'inf_uwb_ros'}
+[3.512690] (localization_proxy) JobSkipped: {'identifier': 'localization_proxy'}
+[3.512710] (swarm_localization) JobSkipped: {'identifier': 'swarm_localization'}
+[3.512729] (swarm_loop) JobSkipped: {'identifier': 'swarm_loop'}
+[3.512749] (swarm_detector) JobSkipped: {'identifier': 'swarm_detector'}
+[3.512768] (-) EventReactorShutdown: {}

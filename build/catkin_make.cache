@@ -1,0 +1,2 @@
+bspline-main:camera_models:cv_bridge:image_geometry:inf_uwb_ros-wifi:localization_proxy:opencv_tests:swarm_detector-master:swarm_localization:swarm_loop:swarm_msgs:swarmcomm_msgs:swarmtal_msgs:vins_estimator:vision_opencv
+-DCATKIN_DEVEL_PREFIX=/home/john/Documents/swarm_ws/devel -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install -G Unix Makefiles

@@ -1,0 +1,2 @@
+set(swarmcomm_msgs_MESSAGE_FILES "/home/john/Documents/swarm_ws/src/swarmcomm_msgs/msg/remote_uwb_info.msg;/home/john/Documents/swarm_ws/src/swarmcomm_msgs/msg/incoming_broadcast_data.msg;/home/john/Documents/swarm_ws/src/swarmcomm_msgs/msg/data_buffer.msg;/home/john/Documents/swarm_ws/src/swarmcomm_msgs/msg/drone_network_status.msg;/home/john/Documents/swarm_ws/src/swarmcomm_msgs/msg/swarm_network_status.msg")
+set(swarmcomm_msgs_SERVICE_FILES "")

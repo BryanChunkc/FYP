@@ -1,0 +1,1 @@
+Invoking command in '/home/john/Documents/swarm_ws/build/bspline': /usr/bin/cmake /home/john/Documents/swarm_ws/src/bspline-main -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/bspline

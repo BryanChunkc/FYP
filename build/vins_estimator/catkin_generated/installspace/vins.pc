@@ -1,0 +1,8 @@
+prefix=/home/john/Documents/swarm_ws/install
+
+Name: vins
+Description: Description of vins
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/john/Documents/swarm_ws/install
+
+Name: swarmcomm_msgs
+Description: Description of swarmcomm_msgs
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

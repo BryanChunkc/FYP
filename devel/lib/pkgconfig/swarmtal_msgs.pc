@@ -1,0 +1,8 @@
+prefix=/home/john/Documents/swarm_ws/devel
+
+Name: swarmtal_msgs
+Description: Description of swarmtal_msgs
+Version: 0.0.0
+Cflags: -I/home/john/Documents/swarm_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

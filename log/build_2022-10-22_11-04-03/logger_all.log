@@ -1,0 +1,458 @@
+[0.152s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.152s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f13a6eb2198>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f13a6eb2198>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f13a6eb2400>)
+[0.190s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.190s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.190s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.190s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.191s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/john/Documents/swarm_ws'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extension 'ros'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extensions ['cmake', 'python']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extension 'cmake'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extension 'python'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extensions ['python_setup_py']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(build_isolated) by extension 'python_setup_py'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel) ignored
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extension 'ros'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extensions ['cmake', 'python']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extension 'cmake'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extension 'python'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extensions ['python_setup_py']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(devel_isolated) by extension 'python_setup_py'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.235s] WARNING:colcon.colcon_cmake.package_identification.cmake:Ignoring 'src/CMakeLists.txt' since it seems to be a toplevel CMake file generated by 'catkin_make'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/bspline-main) by extensions ['ignore', 'ignore_ament_install']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/bspline-main) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/bspline-main) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/bspline-main) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/bspline-main) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/bspline-main) by extensions ['colcon_meta']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/bspline-main) by extension 'colcon_meta'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/bspline-main) by extensions ['ros']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/bspline-main) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bspline-main' with type 'ros.catkin' and name 'bspline'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_models) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_models) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_models) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_models) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_models) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_models) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_models) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_models) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_models) by extension 'ros'
+[0.241s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_models' with type 'ros.catkin' and name 'camera_models'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_bridge) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_bridge) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_bridge) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_bridge) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_bridge) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_bridge) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_bridge) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_bridge) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cv_bridge' with type 'ros.ament_cmake' and name 'cv_bridge'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_geometry) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_geometry) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_geometry) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_geometry) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_geometry) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_geometry) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_geometry) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_geometry) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_geometry) by extension 'ros'
+[0.244s] DEBUG:colcon.colcon_core.package_identification:Package 'src/image_geometry' with type 'ros.ament_cmake' and name 'image_geometry'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/inf_uwb_ros-wifi) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/inf_uwb_ros-wifi) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/inf_uwb_ros-wifi) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/inf_uwb_ros-wifi) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/inf_uwb_ros-wifi) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/inf_uwb_ros-wifi) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/inf_uwb_ros-wifi) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/inf_uwb_ros-wifi) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/inf_uwb_ros-wifi) by extension 'ros'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Package 'src/inf_uwb_ros-wifi' with type 'ros.catkin' and name 'inf_uwb_ros'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_proxy) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_proxy) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_proxy) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_proxy) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_proxy) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_proxy) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_proxy) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_proxy) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_proxy) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/localization_proxy' with type 'ros.catkin' and name 'localization_proxy'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/opencv_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/opencv_tests) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/opencv_tests) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/opencv_tests) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/opencv_tests) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/opencv_tests) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/opencv_tests) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/opencv_tests) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/opencv_tests) by extension 'ros'
+[0.249s] DEBUG:colcon.colcon_core.package_identification:Package 'src/opencv_tests' with type 'ros.ament_python' and name 'opencv_tests'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_detector-master) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_detector-master) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_detector-master) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_detector-master) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_detector-master) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_detector-master) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_detector-master) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_detector-master) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_detector-master) by extension 'ros'
+[0.251s] DEBUG:colcon.colcon_core.package_identification:Package 'src/swarm_detector-master' with type 'ros.catkin' and name 'swarm_detector'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_localization) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_localization) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_localization) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_localization) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_localization) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_localization) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_localization) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_localization) by extension 'ros'
+[0.252s] DEBUG:colcon.colcon_core.package_identification:Package 'src/swarm_localization' with type 'ros.catkin' and name 'swarm_localization'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_loop) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_loop) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_loop) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_loop) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_loop) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_loop) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_loop) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_loop) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_loop) by extension 'ros'
+[0.254s] DEBUG:colcon.colcon_core.package_identification:Package 'src/swarm_loop' with type 'ros.catkin' and name 'swarm_loop'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_msgs) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_msgs) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_msgs) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_msgs) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_msgs) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_msgs) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_msgs) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarm_msgs) by extension 'ros'
+[0.256s] DEBUG:colcon.colcon_core.package_identification:Package 'src/swarm_msgs' with type 'ros.catkin' and name 'swarm_msgs'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmcomm_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmcomm_msgs) by extension 'ignore'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmcomm_msgs) by extension 'ignore_ament_install'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmcomm_msgs) by extensions ['colcon_pkg']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmcomm_msgs) by extension 'colcon_pkg'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmcomm_msgs) by extensions ['colcon_meta']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmcomm_msgs) by extension 'colcon_meta'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmcomm_msgs) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmcomm_msgs) by extension 'ros'
+[0.257s] DEBUG:colcon.colcon_core.package_identification:Package 'src/swarmcomm_msgs' with type 'ros.catkin' and name 'swarmcomm_msgs'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmtal_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmtal_msgs) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmtal_msgs) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmtal_msgs) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmtal_msgs) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmtal_msgs) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmtal_msgs) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmtal_msgs) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/swarmtal_msgs) by extension 'ros'
+[0.259s] DEBUG:colcon.colcon_core.package_identification:Package 'src/swarmtal_msgs' with type 'ros.catkin' and name 'swarmtal_msgs'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/vins_estimator) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/vins_estimator) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/vins_estimator) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/vins_estimator) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/vins_estimator) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/vins_estimator) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/vins_estimator) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/vins_estimator) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/vins_estimator) by extension 'ros'
+[0.260s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vins_estimator' with type 'ros.catkin' and name 'vins'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ros'
+[0.261s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv' with type 'ros.ament_cmake' and name 'vision_opencv'
+[0.262s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.262s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.262s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.262s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.262s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.302s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'bspline' build argument 'cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'bspline' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'bspline' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'bspline' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'bspline' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'bspline' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'bspline' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'bspline' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'bspline' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'bspline' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/bspline', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/bspline', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/bspline-main', 'symlink_install': True, 'test_result_base': None}
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'camera_models' build argument 'cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'camera_models' build argument 'cmake_target' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'camera_models' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'camera_models' build argument 'cmake_clean_cache' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'camera_models' build argument 'cmake_clean_first' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'camera_models' build argument 'cmake_force_configure' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'camera_models' build argument 'ament_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'camera_models' build argument 'catkin_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'camera_models' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.306s] DEBUG:colcon.colcon_core.verb:Building package 'camera_models' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/camera_models', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/camera_models', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/camera_models', 'symlink_install': True, 'test_result_base': None}
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.307s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.307s] DEBUG:colcon.colcon_core.verb:Building package 'cv_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/cv_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/cv_bridge', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/cv_bridge', 'symlink_install': True, 'test_result_base': None}
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_args' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target' from command line to 'None'
+[0.308s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.309s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.309s] DEBUG:colcon.colcon_core.verb:Building package 'image_geometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/image_geometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/image_geometry', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/image_geometry', 'symlink_install': True, 'test_result_base': None}
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'swarmtal_msgs' build argument 'cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'swarmtal_msgs' build argument 'cmake_target' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'swarmtal_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'swarmtal_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'swarmtal_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'swarmtal_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'swarmtal_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'swarmtal_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'swarmtal_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.310s] DEBUG:colcon.colcon_core.verb:Building package 'swarmtal_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/swarmtal_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/swarmtal_msgs', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/swarmtal_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'vins' build argument 'cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'vins' build argument 'cmake_target' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'vins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'vins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'vins' build argument 'cmake_clean_first' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'vins' build argument 'cmake_force_configure' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'vins' build argument 'ament_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'vins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'vins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.311s] DEBUG:colcon.colcon_core.verb:Building package 'vins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/vins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/vins', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/vins_estimator', 'symlink_install': True, 'test_result_base': None}
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.313s] DEBUG:colcon.colcon_core.verb:Building package 'opencv_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/opencv_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/opencv_tests', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/opencv_tests', 'symlink_install': True, 'test_result_base': None}
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'swarm_msgs' build argument 'cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'swarm_msgs' build argument 'cmake_target' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'swarm_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'swarm_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'swarm_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'swarm_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'swarm_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'swarm_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.314s] Level 5:colcon.colcon_core.verb:set package 'swarm_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.314s] DEBUG:colcon.colcon_core.verb:Building package 'swarm_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/swarm_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/swarm_msgs', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/swarm_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'swarmcomm_msgs' build argument 'cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'swarmcomm_msgs' build argument 'cmake_target' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'swarmcomm_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'swarmcomm_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'swarmcomm_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'swarmcomm_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'swarmcomm_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'swarmcomm_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.315s] Level 5:colcon.colcon_core.verb:set package 'swarmcomm_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.315s] DEBUG:colcon.colcon_core.verb:Building package 'swarmcomm_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/swarmcomm_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/swarmcomm_msgs', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/swarmcomm_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_args' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target' from command line to 'None'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_first' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_force_configure' from command line to 'False'
+[0.316s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'ament_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.317s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.317s] DEBUG:colcon.colcon_core.verb:Building package 'vision_opencv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/vision_opencv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/vision_opencv', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/vision_opencv', 'symlink_install': True, 'test_result_base': None}
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'inf_uwb_ros' build argument 'cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'inf_uwb_ros' build argument 'cmake_target' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'inf_uwb_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'inf_uwb_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'inf_uwb_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'inf_uwb_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'inf_uwb_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'inf_uwb_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.318s] Level 5:colcon.colcon_core.verb:set package 'inf_uwb_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.318s] DEBUG:colcon.colcon_core.verb:Building package 'inf_uwb_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/inf_uwb_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/inf_uwb_ros', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/inf_uwb_ros-wifi', 'symlink_install': True, 'test_result_base': None}
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'localization_proxy' build argument 'cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'localization_proxy' build argument 'cmake_target' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'localization_proxy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'localization_proxy' build argument 'cmake_clean_cache' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'localization_proxy' build argument 'cmake_clean_first' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'localization_proxy' build argument 'cmake_force_configure' from command line to 'False'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'localization_proxy' build argument 'ament_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'localization_proxy' build argument 'catkin_cmake_args' from command line to 'None'
+[0.319s] Level 5:colcon.colcon_core.verb:set package 'localization_proxy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.319s] DEBUG:colcon.colcon_core.verb:Building package 'localization_proxy' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/localization_proxy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/localization_proxy', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/localization_proxy', 'symlink_install': True, 'test_result_base': None}
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'swarm_localization' build argument 'cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'swarm_localization' build argument 'cmake_target' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'swarm_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'swarm_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'swarm_localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'swarm_localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'swarm_localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'swarm_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.320s] Level 5:colcon.colcon_core.verb:set package 'swarm_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.320s] DEBUG:colcon.colcon_core.verb:Building package 'swarm_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/swarm_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/swarm_localization', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/swarm_localization', 'symlink_install': True, 'test_result_base': None}
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'swarm_loop' build argument 'cmake_args' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'swarm_loop' build argument 'cmake_target' from command line to 'None'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'swarm_loop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.321s] Level 5:colcon.colcon_core.verb:set package 'swarm_loop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.322s] Level 5:colcon.colcon_core.verb:set package 'swarm_loop' build argument 'cmake_clean_first' from command line to 'False'
+[0.322s] Level 5:colcon.colcon_core.verb:set package 'swarm_loop' build argument 'cmake_force_configure' from command line to 'False'
+[0.322s] Level 5:colcon.colcon_core.verb:set package 'swarm_loop' build argument 'ament_cmake_args' from command line to 'None'
+[0.322s] Level 5:colcon.colcon_core.verb:set package 'swarm_loop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.322s] Level 5:colcon.colcon_core.verb:set package 'swarm_loop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.322s] DEBUG:colcon.colcon_core.verb:Building package 'swarm_loop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/swarm_loop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/swarm_loop', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/swarm_loop', 'symlink_install': True, 'test_result_base': None}
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'swarm_detector' build argument 'cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'swarm_detector' build argument 'cmake_target' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'swarm_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'swarm_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'swarm_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'swarm_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'swarm_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'swarm_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.323s] Level 5:colcon.colcon_core.verb:set package 'swarm_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.323s] DEBUG:colcon.colcon_core.verb:Building package 'swarm_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/john/Documents/swarm_ws/build/swarm_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/john/Documents/swarm_ws/install/swarm_detector', 'merge_install': False, 'path': '/home/john/Documents/swarm_ws/src/swarm_detector-master', 'symlink_install': True, 'test_result_base': None}
+[0.324s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.327s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.328s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/john/Documents/swarm_ws/src/swarmtal_msgs' with build type 'catkin'
+[0.328s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/john/Documents/swarm_ws/src/swarmtal_msgs'
+[0.333s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.333s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.333s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.334s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/melodic'
+[0.337s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/john/Documents/swarm_ws/src/cv_bridge' with build type 'ament_cmake'
+[0.337s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/john/Documents/swarm_ws/src/cv_bridge'
+[0.339s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.339s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.340s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/melodic'
+[0.343s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/john/Documents/swarm_ws/src/camera_models' with build type 'catkin'
+[0.343s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/john/Documents/swarm_ws/src/camera_models'
+[0.345s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.345s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.346s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/melodic'
+[0.349s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/john/Documents/swarm_ws/src/vins_estimator' with build type 'catkin'
+[0.349s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/john/Documents/swarm_ws/src/vins_estimator'
+[0.351s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.351s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.352s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/melodic'
+[0.355s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/john/Documents/swarm_ws/src/bspline-main' with build type 'catkin'
+[0.355s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/john/Documents/swarm_ws/src/bspline-main'
+[0.356s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.357s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.358s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/melodic'
+[0.361s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/john/Documents/swarm_ws/src/image_geometry' with build type 'ament_cmake'
+[0.362s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/john/Documents/swarm_ws/src/image_geometry'
+[0.364s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.364s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.366s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/melodic'
+[0.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/john/Documents/swarm_ws/build/swarmtal_msgs': /usr/bin/cmake /home/john/Documents/swarm_ws/src/swarmtal_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/swarmtal_msgs
+[0.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/john/Documents/swarm_ws/build/cv_bridge': /usr/bin/cmake /home/john/Documents/swarm_ws/src/cv_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/cv_bridge
+[0.391s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/john/Documents/swarm_ws/build/camera_models': /usr/bin/cmake /home/john/Documents/swarm_ws/src/camera_models -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/camera_models
+[0.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/john/Documents/swarm_ws/build/vins': /usr/bin/cmake /home/john/Documents/swarm_ws/src/vins_estimator -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/vins
+[0.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/john/Documents/swarm_ws/build/bspline': /usr/bin/cmake /home/john/Documents/swarm_ws/src/bspline-main -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/bspline
+[0.406s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/john/Documents/swarm_ws/build/image_geometry': /usr/bin/cmake /home/john/Documents/swarm_ws/src/image_geometry -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/image_geometry
+[0.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/john/Documents/swarm_ws/build/cv_bridge' returned '1': /usr/bin/cmake /home/john/Documents/swarm_ws/src/cv_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/cv_bridge
+[0.434s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv_bridge)
+[0.441s] Level 1:colcon.colcon_core.environment:checking '/home/john/Documents/swarm_ws/install/cv_bridge' for CMake module files
+[0.441s] Level 1:colcon.colcon_core.environment:checking '/home/john/Documents/swarm_ws/install/cv_bridge' for CMake config files
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/home/john/Documents/swarm_ws/install/cv_bridge/bin'
+[0.442s] Level 1:colcon.colcon_core.environment:checking '/home/john/Documents/swarm_ws/install/cv_bridge/lib/pkgconfig/cv_bridge.pc'
+[0.443s] Level 1:colcon.colcon_core.environment:checking '/home/john/Documents/swarm_ws/install/cv_bridge/lib/python3.6/site-packages'
+[0.443s] Level 1:colcon.colcon_core.environment:checking '/home/john/Documents/swarm_ws/install/cv_bridge/bin'
+[0.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/john/Documents/swarm_ws/install/cv_bridge/share/cv_bridge/package.ps1'
+[0.446s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/john/Documents/swarm_ws/install/cv_bridge/share/cv_bridge/package.dsv'
+[0.446s] INFO:colcon.colcon_core.shell:Creating package script '/home/john/Documents/swarm_ws/install/cv_bridge/share/cv_bridge/package.sh'
+[0.447s] INFO:colcon.colcon_core.shell:Creating package script '/home/john/Documents/swarm_ws/install/cv_bridge/share/cv_bridge/package.bash'
+[0.448s] INFO:colcon.colcon_core.shell:Creating package script '/home/john/Documents/swarm_ws/install/cv_bridge/share/cv_bridge/package.zsh'
+[0.449s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/john/Documents/swarm_ws/install/cv_bridge/share/colcon-core/packages/cv_bridge)
+[3.840s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.841s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.841s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[3.841s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.853s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.854s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.854s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.857s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.858s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/john/Documents/swarm_ws/install/local_setup.ps1'
+[3.859s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/john/Documents/swarm_ws/install/_local_setup_util_ps1.py'
+[3.864s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/john/Documents/swarm_ws/install/setup.ps1'
+[3.865s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/john/Documents/swarm_ws/install/local_setup.sh'
+[3.867s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/john/Documents/swarm_ws/install/_local_setup_util_sh.py'
+[3.868s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/john/Documents/swarm_ws/install/setup.sh'
+[3.869s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/john/Documents/swarm_ws/install/local_setup.bash'
+[3.870s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/john/Documents/swarm_ws/install/setup.bash'
+[3.871s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/john/Documents/swarm_ws/install/local_setup.zsh'
+[3.872s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/john/Documents/swarm_ws/install/setup.zsh'

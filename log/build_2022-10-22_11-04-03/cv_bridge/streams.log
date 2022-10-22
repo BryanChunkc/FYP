@@ -1,0 +1,7 @@
+[0.041s] Invoking command in '/home/john/Documents/swarm_ws/build/cv_bridge': /usr/bin/cmake /home/john/Documents/swarm_ws/src/cv_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/cv_bridge
+[0.068s] -- Configuring incomplete, errors occurred!
+[0.069s] CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
+[0.069s]   CMake 3.14 or higher is required.  You are running version 3.10.2
+[0.069s] 
+[0.069s] 
+[0.073s] Invoked command in '/home/john/Documents/swarm_ws/build/cv_bridge' returned '1': /usr/bin/cmake /home/john/Documents/swarm_ws/src/cv_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/john/Documents/swarm_ws/install/cv_bridge
